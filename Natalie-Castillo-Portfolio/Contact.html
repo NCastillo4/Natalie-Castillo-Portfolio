@@ -10,16 +10,31 @@
     <link rel= "https://meyerweb.com/eric/tools/css/reset/">
 </head>
 <body>
-    <section id="hero_background">
-        <div id="hero_image" class="hero_background"><img src=Images/LeavesHero.png>
-        <h3>Contact</h3>
-    </div>
-    </section>
-<header>
-    <h4> Let's make something together!</h4>
-</header>
-
+    <header>
+        <section id="contact_nav">
+            <div class="contact_header">
+                <h3>Contact</h3> 
+            </div>
+            <div class="nav_categories">
+                <ul>
+                    <li>
+                        <a href="index.html">About</a> 
+                    </li>
+                    <li>
+                        <a href="Projects.html">Projects</a>    
+                    </li>
+                    <li> 
+                <a href="Contact.html">Contact</a>  
+                </li>
+                </ul>
+            </div>
+        </section>   
+    </header>
+        <!--<div id="hero_image" class="hero_background"><img src=Images/LeavesHero.png>-->
+       
+    
 <section id="contact_container">
+     <h4> Let's make something together!</h4>
     <div class="contactform">
         <form class="formbody">
             <div class="fname">
@@ -31,30 +46,7 @@
             <div class="fmessage">  
             <label>MESSAGE</label>
             </div>
-            
-            <div class="buttons">
-                <button class="blob-btn">
-                  Blob Button
-                  <span class="blob-btn__inner">
-                    <span class="blob-btn__blobs">
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                    </span>
-                  </span>
-                </button>
-                <br/>
-              
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
+           <span class="submit"><a href=""></a></span>
         </form>
     </div>
 
