@@ -230,61 +230,97 @@ footer{
 }
 
 /* Projects Page*/
+* {
+    box-sizing: border-box;
+    /* wireframing border  */
+    border: solid 1px red !important;
+}
 
 body{
     background:white;
     font-family:  'Roboto', sans-serif;
 }
 
-#projects_nav{
-    width:100%;
-    
-   }
-   
-   .nav_categories ul{
+
+
+
+#projects_nav ul{
        display:flex;
-       flex-direction:row;
        justify-content: flex-end;
        list-style: none;
-       margin-top: -120px;
-       margin-right: 45px;
-   }
-   
-   .nav_categories a{
-       padding-left:30px;
-       padding-right: 30px;
+       margin-right: 80px;
+       padding:0;
+       align-items: center;
    }
 
-h3{
-    z-index:1;
-    position:relative; top: -80px;
-    margin-left: 130px;
+#projects_nav ul li{
+    padding:20px;
+}
+
+#projects_nav a:hover{
+    text-decoration: #244E5A;
+    
+    
+}
+   
+main h3{
     font-family: 'Roboto', sans-serif;
-    font-size:64px;
+    font-size:50px;
     font-weight:600;
     color:#244E5A;
+    margin-top: 100px;
+    margin-left:1em;
 }
 
-#projectGrid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-areas: "habitatforhumanity" "pawmatch" "travelapp"; 
-    margin-left: 130px;
-    margin-right:130px;
-    margin-top:60px;
-    gap:60px;
+#project-grid{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
 }
+/* tablet  */
+
+@media screen and (min-width: 650px) {
+    }
+}
+
+
+/* desktop  */
+
+@media screen and (min-width: 1100px) {}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+    
+ 
+    
+
+
+
+
+
 
 /* Contact Page*/
 
-body{
+/*body{
     background:white;
     font-family:  'Roboto', sans-serif;
 }
 
 #contact_nav{
  width:100%;
-}
+}*/
 
 .nav_categories ul{
     display:flex;
@@ -300,7 +336,7 @@ body{
     padding-right: 30px;
 }
 
-h3{
+/*h3{
     z-index:1;
     position:relative; top: -260px;
     margin-left: 130px;
@@ -308,7 +344,7 @@ h3{
     font-size:64px;
     font-weight:600;
     color:#244E5A;
-}
+}/*
 
 h4{
     font-family: 'Roboto', sans-serif;
@@ -327,7 +363,7 @@ h4{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position:relative; top:-150px;  
+    /*position:relative;*/ top:-150px;  
 }
 .contactform{
     width:650px;
@@ -420,28 +456,6 @@ h4{
 .submit a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
 }
-
-
-
-@media only screen and (max-width: 600px) {
-
-}
-
-
-
-  
-
-
-
-
-
-
-
-
-
-    
- 
-    
 
 
 
